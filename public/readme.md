@@ -71,7 +71,7 @@ Voici le détail de ce qu'accomplit cette fonction.
 2. Créer une deuxième variable `message` contenant le nom saisi, entouré d'autres éléments pour former un message.
 3. Afficher le message.
 
-Tu auras remarqué qu'après avoir saisi cette fonction, il ne s'est rien passé. C'est normal : tu n'as fait que la **déclarer**, c'est-à-dire indiquer son existence à JavaScript. Pour la voir en action, il faut l'**appeler** en saisissant :
+Tu auras remarqué qu'après avoir saisi cette fonction, il ne s'est rien passé. C'est normal : tu n'as fait que la **déclarer**, c'est-à-dire indiquer son existence à JavaScript. Pour la voir en action, il faut l'**appeler** en saisissant :
 
 ```javascript
 askNameAndGreet();
@@ -79,7 +79,7 @@ askNameAndGreet();
 
 #### Travailler en local
 
-À partir de maintenant, tu vas travailler en local, avec des fichiers HTML et JavaScript stockés sur ton ordinateur.
+Pour terminer cette initiation, tu vas travailler en local, avec des fichiers HTML et JavaScript stockés sur ton ordinateur.
 
 Comme tu l'as appris dans une quête **Git**, tu vas d'abord devoir cloner un projet pour récupérer la structure de l'atelier.
 Avec ton terminal, positionne-toi dans le dossier où tu veux travailler et clone le repository suivant :
@@ -96,7 +96,7 @@ cd initiation-javascript-template
 
 Le dossier contient un fichier `index.html` et un fichier `tutorial.js`, que tu vas éditer.
 
-#### Gérer un bouton #1
+#### Gérer un bouton
 
 Tout ce que nous avons fait jusqu'ici s'est passé dans la console. C'est un bon début, mais on ne va pas s'arrêter là : un des usages de JavaScript reste d'ajouter de l'interactivité aux pages web.
 
@@ -122,6 +122,45 @@ Ouvre la console puis clique sur le bouton. Il ne se passe rien... sauf dans la 
 
 Il faudra t'y habituer : l'apprentissage du code est un long chemin semé de messages d'erreur !
 
-Mais en ce qui concerne celle-ci, la solution est simple : l'erreur se produit parce que la fonction `askNameAndGreet` est inconnue.
+Mais en ce qui concerne celle-ci, la solution est simple : l'erreur se produit parce que la fonction `askNameAndGreet` est inconnue.
 
-Il faud donc la coller dans le fichier `tutorial.js`.
+Il faut donc la coller dans le fichier `tutorial.js`.
+
+#### Modifier le style d'un élément
+
+JavaScript dans le navigateur permet de modifier le contenu et/ou le style d'un élément.
+
+Voici le code HTML à reporter dans la section correspondante d'`index.html` :
+
+```html
+<p id="paragraph">This paragraph will change color!</p>
+```
+
+Et voici un code JavaScript qui va changer sa couleur :
+
+```javascript
+document.getElementById('paragraph').style.color = 'red';
+```
+
+Si tu recharges la page à plusieurs reprises, tu pourras constater que le paragraphe repasse en couleur par défaut (noir). Il faut en effet un peu de temps au navigateur pour charger (via la balise `<script>`) et exécuter le code JavaScript.
+
+Essaie de changer la couleur indiquée après le signe égal.
+
+#### Exercice (optionnel)
+
+Si tu as bien compris les sections précédentes, tu peux essayer d'écrire une fonction `changeColor` qui va :
+
+1. Demander à l'utilisateur une couleur
+2. Modifier la couleur du paragraphe avec cette couleur
+
+Tu peux ensuite modifier le `onclick` du bouton pour qu'il appelle cette fonction.
+
+#### Conclusion
+
+C'est la fin de cette initiation au JavaScript.
+
+Tu n'as vu ici que l'aspect "front-end" : tout le code JavaScript a été exécuté par ton navigateur. Pendant très longtemps, le navigateur web était le seul endroit où on pouvait utiliser JavaScript.
+
+Même s'il reste très utilisé pour le front-end, JavaScript est devenu plus polyvalent au fil des années, et permet maintenant de faire fonctionner :
+* des applications "back-end" (serveur)
+* et même des applications de bureau (Visual Studio Code et Slack en sont des exemples).
