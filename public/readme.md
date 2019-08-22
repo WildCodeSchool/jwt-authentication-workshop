@@ -76,3 +76,52 @@ Tu auras remarqué qu'après avoir saisi cette fonction, il ne s'est rien passé
 ```javascript
 askNameAndGreet()
 ```
+
+#### Travailler en local
+
+À partir de maintenant, tu vas travailler en local, avec des fichiers HTML et JavaScript stockés sur ton ordinateur.
+
+Comme tu l'as appris dans une quête **Git**, tu vas d'abord devoir cloner un projet pour récupérer la structure de l'atelier.
+Avec ton terminal, positionne-toi dans le dossier où tu veux travailler et clone le repository suivant :
+
+```bash
+git clone git clone https://github.com/WildCodeSchool/initiation-javascript-template
+```
+
+La commande `git clone` a créé un dossier qui contient le projet et tu peux te rendre dans ce dossier avec la commande
+
+```bash
+cd initiation-javascript-template
+```
+
+Le dossier contient un fichier `index.html` et un fichier `tutorial.js`, que tu vas éditer.
+
+#### Gérer un bouton #1
+
+Tout ce que nous avons fait jusqu'ici s'est passé dans la console. C'est un bon début, mais on ne va pas s'arrêter là : un des usages de JavaScript reste d'ajouter de l'interactivité aux pages web.
+
+On peut notamment ajouter un attribut `onclick` sur un bouton HTML, pour exécuter du code JavaScript. Dans le fichier `index.html`, sous la section correspondante, colle ceci :
+
+```html
+<button class="button is-primary" onclick="alert('Hello World');">
+  Say Hello
+</button>
+```
+
+Recharge la page (cela se fait tout seul si tu utilises l'extension *Live Server*) de Visual Studio Code.
+
+Si tu cliques sur le bouton, tu est gratifié d'un "Hello World".
+
+Remplace maintenant le **contenu** de l'attribut `onclick` pour utiliser la fonction écrite précedemment :
+
+```javascript
+askNameAndGreet();
+```
+
+Ouvre la console puis clique sur le bouton. Il ne se passe rien... sauf dans la console, où un message d'erreur s'affiche : `Uncaught ReferenceError: askNameAndGreet is not defined`.
+
+Il faudra t'y habituer : l'apprentissage du code est un long chemin semé de messages d'erreur !
+
+Mais en ce qui concerne celle-ci, la solution est simple : l'erreur se produit parce que la fonction `askNameAndGreet` est inconnue.
+
+Il faud donc la coller dans le fichier `tutorial.js`.
