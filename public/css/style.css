@@ -70,6 +70,11 @@ pre.language-javascript:before {
     content: "JavaScript";
 }
 
+pre.language-bash:before {
+    content: "Shell";
+}
+
+
 
 li {margin: 10px}
 

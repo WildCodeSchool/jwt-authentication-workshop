@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Prism from 'prismjs';
 import 'prismjs/components/prism-javascript';
+import 'prismjs/components/prism-bash';
 import Hero from './components/Hero';
 import Menu from './components/Menu';
 import Steps from './components/Steps';

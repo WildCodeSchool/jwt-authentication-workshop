@@ -74,7 +74,7 @@ Voici le détail de ce qu'accomplit cette fonction.
 Tu auras remarqué qu'après avoir saisi cette fonction, il ne s'est rien passé. C'est normal : tu n'as fait que la **déclarer**, c'est-à-dire indiquer son existence à JavaScript. Pour la voir en action, il faut l'**appeler** en saisissant :
 
 ```javascript
-askNameAndGreet()
+askNameAndGreet();
 ```
 
 #### Travailler en local
@@ -85,7 +85,7 @@ Comme tu l'as appris dans une quête **Git**, tu vas d'abord devoir cloner un pr
 Avec ton terminal, positionne-toi dans le dossier où tu veux travailler et clone le repository suivant :
 
 ```bash
-git clone git clone https://github.com/WildCodeSchool/initiation-javascript-template
+git clone https://github.com/WildCodeSchool/initiation-javascript-template
 ```
 
 La commande `git clone` a créé un dossier qui contient le projet et tu peux te rendre dans ce dossier avec la commande
