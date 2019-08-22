@@ -47,6 +47,30 @@ pre,
     padding-top: 0.25em;
 }
 
+pre[class*="language-"] {
+    position: relative;
+}
+
+pre[class*="language-"]:before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-left: 1px solid #555;
+    border-bottom: 1px solid #555;
+    padding: 2px 5px;
+    font-size: 12px;
+    border-bottom-left-radius: 2px;
+}
+
+pre.language-html:before {
+    content: "HTML";
+}
+
+pre.language-javascript:before {
+    content: "JavaScript";
+}
+
+
 li {margin: 10px}
 
 .hero.is-primary {
