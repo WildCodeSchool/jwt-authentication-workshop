@@ -6,7 +6,7 @@ Rends-toi dans l'onglet **Console**.
 
 #### Afficher un message
 
-Saisis ceci dans la console :
+Saisis ceci dans la console, et appuie (toujours) sur Enter pour valider :
 
 ```javascript
 alert('Hello World');
@@ -55,7 +55,7 @@ Saisis ensuite juste `name` dans la console et valide : la valeur que tu as sais
 
 Tu as pour l'instant utilisé deux fonctions de JavaScript : `alert` et `prompt`. On peut également écrire ses propres fonctions !
 
-Une **fonction** regroupe un ensemble d'instructions destinées à accomplir une tâche précise. Voici une fonction qui permet de demander à l'utilisateur son nom, puis de le saluer. Copie-la dans la console :
+Une **fonction** regroupe un ensemble d'instructions destinées à accomplir une tâche précise. Voici une fonction qui permet de demander à l'utilisateur son nom, puis de le saluer. Copie-la dans la console, et valide avec Enter :
 
 ```javascript
 function askNameAndGreet() {
@@ -82,10 +82,10 @@ askNameAndGreet();
 Pour terminer cette initiation, tu vas travailler en local, avec des fichiers HTML et JavaScript stockés sur ton ordinateur.
 
 Comme tu l'as appris dans une quête **Git**, tu vas d'abord devoir cloner un projet pour récupérer la structure de l'atelier.
-Avec ton terminal, positionne-toi dans le dossier où tu veux travailler et clone le repository suivant :
+Avec ton terminal, positionne-toi dans le dossier où tu veux travailler, et clone le repository suivant :
 
 ```bash
-git clone https://github.com/WildCodeSchool/initiation-javascript-template
+git clone https://github.com/WildCodeSchool/initiation-javascript-template.git
 ```
 
 La commande `git clone` a créé un dossier qui contient le projet et tu peux te rendre dans ce dossier avec la commande
@@ -94,7 +94,7 @@ La commande `git clone` a créé un dossier qui contient le projet et tu peux te
 cd initiation-javascript-template
 ```
 
-Le dossier contient un fichier `index.html` et un fichier `tutorial.js`, que tu vas éditer.
+Le dossier contient un fichier `index.html` et un fichier `tutorial.js`, que tu vas éditer. Utilise Visual Studio Code si tu l'as déjà installé, mais gedit (pré-installé sous Linux), Sublime Text, etc. feront l'affaire (du moment qu'il y a la coloration syntaxique).
 
 #### Gérer un bouton
 
@@ -108,7 +108,7 @@ On peut notamment ajouter un attribut `onclick` sur un bouton HTML, pour exécut
 </button>
 ```
 
-Recharge la page (cela se fait tout seul si tu utilises l'extension *Live Server*) de Visual Studio Code.
+Recharge la page.
 
 Si tu cliques sur le bouton, tu est gratifié d'un "Hello World".
 
@@ -142,13 +142,25 @@ Et voici un code JavaScript qui va changer sa couleur :
 document.getElementById('paragraph').style.color = 'red';
 ```
 
-Si tu recharges la page à plusieurs reprises, tu pourras constater que le paragraphe repasse en couleur par défaut (noir). Il faut en effet un peu de temps au navigateur pour charger (via la balise `<script>`) et exécuter le code JavaScript.
+Cet exemple de code donne un aperçu de ce que permet de faire JavaScript dans le navigateur : à savoir, **manipuler le contenu de la page web**.
 
-Essaie de changer la couleur indiquée après le signe égal.
+Quelques explications :
+* `document` représente toute la page web, à laquelle JavaScript peut accéder
+* `document.getElementById(<elementId>)` permet d'accéder à un **élément** de la page. `getElementById` se traduit littéralement en "récupérer un élément par son id", l'id en question étant l'attribut `id` de la balise `<p>` que tu as ajoutée précédemment.
+* l'élément qu'on récupère est un "objet" JavaScript, dont on peut modifier des propriétés. Ici, on accède directement aux propriétés de style - les mêmes qu'on modifie habituellement via CSS.
+* on attribue donc la valeur `red` à la propriété `color`.
 
-#### Exercice (optionnel)
+Essaie de changer la couleur indiquée après le signe égal. Tu peux essayer :
+* les couleurs prédéfinies du navigateur : `'blueviolet'`, `'lightsalmon'`, etc.
+* ou les autres façons d'attribuer des couleurs en CSS (mais _en prenant soin d'entourer les valeurs de guillemets simples_ `'`, par exemple `'#99abef'`).
 
-Si tu as bien compris les sections précédentes, tu peux essayer d'écrire une fonction `changeColor` qui va :
+On s'est limité ici à modifier le style d'un élément, mais JavaScript permet également de manipuler le _contenu_ de la page : ajouter, modifier, supprimer des éléments.
+
+Cette possibilité, combinée à la gestion des interactions (`onclick`, etc.), permet de construire des applications à part entière dans le navigateur.
+
+#### Exercice
+
+En combinant ce que tu as vu dans les sections précédentes, écris une fonction `changeColor` qui va :
 
 1. Demander à l'utilisateur une couleur
 2. Modifier la couleur du paragraphe avec cette couleur
