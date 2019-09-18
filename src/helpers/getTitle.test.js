@@ -2,6 +2,7 @@ import getTitle from './getTitle';
 
 const markdown = `# Title
 
+## Subtitle
 
 #### Etape 1
 

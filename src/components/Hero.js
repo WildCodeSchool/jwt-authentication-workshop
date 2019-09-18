@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Hero = () => (
+const Hero = ({subtitle, title}) => (
 
 <section className="hero is-primary has-background-pink">
 	<div className="hero-body">
@@ -8,9 +8,9 @@ const Hero = () => (
 			<div className="column is-12">
 				<div className="container content">
 					<i className="is-large fas fa-code"></i>
-					<h1 className="title">Initiation <em>JavaScript</em></h1>
+					<h1 className="title">{title}</h1>
 					<h3 className="subtitle">
-						Dans cet atelier, tu vas apprendre à utiliser du <em>JavaScript</em>.
+						{subtitle}
 					</h3>
 				</div>
 			</div>
