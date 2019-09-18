@@ -20,10 +20,6 @@ class App extends Component {
     const markdown = await res.text();
     const steps = splitSteps(markdown);
     this.setState({ steps }, Prism.highlightAll);
-    // setTimeout(
-    //   () => (),
-    //   100
-    // );
   }
 
   render() {
