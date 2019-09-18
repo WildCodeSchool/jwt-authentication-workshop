@@ -16,7 +16,7 @@ class App extends Component {
   }
 
   async componentDidMount() {
-    const res = await fetch('readme.md');
+    const res = await fetch('content.md');
     const markdown = await res.text();
     const steps = splitSteps(markdown);
     this.setState({ steps }, Prism.highlightAll);
