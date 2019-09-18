@@ -1,6 +1,9 @@
 import splitSteps from './splitSteps';
 
-const markdown = `#### Etape 1
+const markdown = `# Title
+
+
+#### Etape 1
 
 Blabla
 
