@@ -1,5 +1,7 @@
 # Workshop template
 
+A React-based workshop template. It basically reads a markdown file, splits it into steps, and formats it nicely.
+
 ## 1. Get it
 
 **Don't fork it**.
@@ -21,7 +23,11 @@ You just have to follow its conventions:
 * The first `####` and content below will be displayed as an introduction.
 * All the following `####` and content will be displayed as a card, and their titles automagically added to the left nav menu.
 
-## 4. Push and deploy it!
+## 4. Preview it
+
+`npm start` or `yarn start`
+
+## 5. Push and deploy it!
 
 Once pushed, you should just have to run `npm run deploy` or `yarn deploy`.
 
