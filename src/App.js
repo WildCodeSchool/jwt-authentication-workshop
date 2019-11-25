@@ -25,7 +25,7 @@ class App extends Component {
     const steps = splitSteps(markdown);
     const title = getTitle(markdown);
     const subtitle = getSubtitle(markdown);
-    document.title =
+    document.title = title;
     this.setState({ steps, subtitle, title }, Prism.highlightAll);
   }
 
