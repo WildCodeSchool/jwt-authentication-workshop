@@ -2,6 +2,10 @@
 
 A React-based workshop template. It basically reads a markdown file, splits it into steps, and formats it nicely.
 
+An example of what you get: <https://wildcodeschool.github.io/initiation-javascript/>
+
+For the non-JS out there, you need Node.js, which you *should* install with [NVM](https://github.com/nvm-sh/nvm) (Linux/MacOS) or [NVM-Windows](https://github.com/coreybutler/nvm-windows).
+
 ## 1. Get it
 
 **Don't fork it**.
@@ -25,7 +29,8 @@ You just have to follow its conventions:
 
 ## 4. Preview it
 
-`npm start` or `yarn start`
+* `npm install` or `yarn` to install dependencies
+* `npm start` or `yarn start` to launch
 
 ## 5. Push and deploy it!
 
