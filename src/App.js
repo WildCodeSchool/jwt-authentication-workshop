@@ -25,7 +25,7 @@ class App extends Component {
     const steps = splitSteps(markdown);
     const title = getTitle(markdown);
     const subtitle = getSubtitle(markdown);
-    document.title = title;
+    document.title =
     this.setState({ steps, subtitle, title }, Prism.highlightAll);
   }
 
@@ -37,14 +37,14 @@ class App extends Component {
         <section className="section">
 	        <div className="container">
 	        	<div className="columns">
-              <Menu steps={steps} />
+              <Menu steps={steps.slice(1)} />
 
               <div className="column is-9">
                 <div className="content is-medium">
-                  <h3 className="title is-3">Étapes </h3>
-                  <p><em>Voici toutes les étapes à réaliser pour découvrir JavaScript</em></p>
+                  <h3 className="title is-3">{steps.length ? steps[0].title : ''}</h3>
+                  <p><em>{steps.length ? steps[0].content : ''}</em></p>
 
-                    <Steps steps={steps} />
+                    <Steps steps={steps.slice(1)} />
                 </div>
               </div>
             </div>

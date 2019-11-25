@@ -2,6 +2,7 @@ import splitSteps from './splitSteps';
 
 const markdown = `# Title
 
+## subTitle
 
 #### Etape 1
 

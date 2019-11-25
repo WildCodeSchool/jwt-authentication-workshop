@@ -2,6 +2,10 @@
 
 ## The Subtitle
 
+#### Introduction
+
+A gentle introduction
+
 #### Section title
 
 Write your content here.
