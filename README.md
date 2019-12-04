@@ -6,12 +6,22 @@ An example of what you get: <https://wildcodeschool.github.io/initiation-javascr
 
 For the non-JS out there, you need Node.js, which you *should* install with [NVM](https://github.com/nvm-sh/nvm) (Linux/MacOS) or [NVM-Windows](https://github.com/coreybutler/nvm-windows).
 
-## 1. Get it
+## 1. Create the new workshop repository
 
-**Don't fork it**.
+**Don't fork this repository**.
 
 1. Download it as a **ZIP Archive** with the big green button!
 2. Create a new repo from its content
+
+**OR duplicate it with CLI**
+
+1. Create a new repository `https://github.com/WildCodeSchool/new-workshop`
+2. Duplicate this new repository
+```bash
+git clone --bare git@github.com:WildCodeSchool/workshop-template.git
+cd workshop-template
+git push --mirror git@github.com:WildCodeSchool/new-workshop
+```
 
 ## 2. Change its parameters
 
