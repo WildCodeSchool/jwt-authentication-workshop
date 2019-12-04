@@ -16,7 +16,7 @@ For the non-JS out there, you need Node.js, which you *should* install with [NVM
 **OR duplicate it with CLI**
 
 1. Create a new repository `https://github.com/WildCodeSchool/new-workshop`
-2. Duplicate this new repository
+2. Duplicate this repository
 ```bash
 git clone --bare git@github.com:WildCodeSchool/workshop-template.git
 cd workshop-template
