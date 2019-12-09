@@ -21,6 +21,7 @@ const Steps = ({ steps }) => (
             paragraph: MessageBody,
             list: MessageBody
           }}
+          escapeHtml={false}
         />
       </article>
     </div>
