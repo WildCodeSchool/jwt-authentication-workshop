@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.js": "/workshop-template/static/js/main.29f2379f.chunk.js",
+    "main.js.map": "/workshop-template/static/js/main.29f2379f.chunk.js.map",
+    "runtime~main.js": "/workshop-template/static/js/runtime~main.9169b560.js",
+    "runtime~main.js.map": "/workshop-template/static/js/runtime~main.9169b560.js.map",
+    "static/js/2.d352ea6a.chunk.js": "/workshop-template/static/js/2.d352ea6a.chunk.js",
+    "static/js/2.d352ea6a.chunk.js.map": "/workshop-template/static/js/2.d352ea6a.chunk.js.map",
+    "index.html": "/workshop-template/index.html",
+    "precache-manifest.304bd4e0cf457ce31c7d435207b334f8.js": "/workshop-template/precache-manifest.304bd4e0cf457ce31c7d435207b334f8.js",
+    "service-worker.js": "/workshop-template/service-worker.js"
+  }
+}
