@@ -268,7 +268,7 @@ Mille bravos, tu as fini avec succès cet atelier. Tu peux être fier de toi !
 
 ![Victoire](https://media.giphy.com/media/5KrdjruwmSP6g/giphy.gif)
 
-Tu trouveras le code d'exemple de ce projet [ici]()
+Tu trouveras le code d'exemple de ce projet [ici](https://github.com/WildCodeSchool/jwt-authentication-workshop-source/tree/solution)
 
 #### Note importante
 
