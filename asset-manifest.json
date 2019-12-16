@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.js": "/workshop-template/static/js/main.29f2379f.chunk.js",
-    "main.js.map": "/workshop-template/static/js/main.29f2379f.chunk.js.map",
-    "runtime~main.js": "/workshop-template/static/js/runtime~main.9169b560.js",
-    "runtime~main.js.map": "/workshop-template/static/js/runtime~main.9169b560.js.map",
-    "static/js/2.d352ea6a.chunk.js": "/workshop-template/static/js/2.d352ea6a.chunk.js",
-    "static/js/2.d352ea6a.chunk.js.map": "/workshop-template/static/js/2.d352ea6a.chunk.js.map",
-    "index.html": "/workshop-template/index.html",
-    "precache-manifest.304bd4e0cf457ce31c7d435207b334f8.js": "/workshop-template/precache-manifest.304bd4e0cf457ce31c7d435207b334f8.js",
-    "service-worker.js": "/workshop-template/service-worker.js"
+    "main.js": "/jwt-authentication-workshop/static/js/main.496e236d.chunk.js",
+    "main.js.map": "/jwt-authentication-workshop/static/js/main.496e236d.chunk.js.map",
+    "runtime~main.js": "/jwt-authentication-workshop/static/js/runtime~main.ac19250c.js",
+    "runtime~main.js.map": "/jwt-authentication-workshop/static/js/runtime~main.ac19250c.js.map",
+    "static/js/2.d352ea6a.chunk.js": "/jwt-authentication-workshop/static/js/2.d352ea6a.chunk.js",
+    "static/js/2.d352ea6a.chunk.js.map": "/jwt-authentication-workshop/static/js/2.d352ea6a.chunk.js.map",
+    "index.html": "/jwt-authentication-workshop/index.html",
+    "precache-manifest.649ff76e3d634e430ca88a6959cb30fd.js": "/jwt-authentication-workshop/precache-manifest.649ff76e3d634e430ca88a6959cb30fd.js",
+    "service-worker.js": "/jwt-authentication-workshop/service-worker.js"
   }
 }
