@@ -19,7 +19,7 @@ Dans cet atelier tu vas créer une api REST qui met à disposition la liste de s
 
 Tu pourras utiliser `npm start` pour lancer ton serveur une fois que tu l'auras créé dans les étapes suivantes. Ce script utilise `nodemon` pour recharger le serveur à chaque modification.
 
-Ce boilerplate fournit un ficher `/models/User.js` qui imite le fonctionnement d'un ORM pour les besoins de l'atelier. Tu n'as pas besoin de le modifier.
+Ce boilerplate fournit un ficher `/models/User.js` qui imite le fonctionnement d'un ORM pour les besoins de l'atelier. **Tu n'as pas besoin de le modifier.**
 
 #### Affichage des utilisateurs
 
@@ -32,11 +32,10 @@ Tu vas créer un endpoint api pour rendre accessible la liste des utilisateurs.
 Pour récupérer les utilisateurs, tu peux utiliser le modèle User qui est fourni :
 
 ```javascript
-const User = require('./User');
+const User = require('./models/User');
 
 // ...
 const users = await User.findAll();
-}
 ```
 
 Pour vérifier le résultat je te conseille d'utiliser l'application **Postman**.
@@ -59,7 +58,7 @@ Un email et un mot de passe suffisent pour créer un utilisateur et lui permettr
 - Crée un endpoint api `POST /api/v1/users`
 - Récupère `{ email, password }` du `body` de la requête
 - Requiers le module `./authentication` qui est vide pour le moment
-- Inscris l'utilisateur 
+- Inscris l'utilisateur avec la fonction suivante :
 
 ```javascript
 const user = await auth.register({ email, password });
@@ -75,7 +74,20 @@ app.use(express.json());
 
 Tu vas mettre le code lié à l'authentification dans le fichier `authentication.js`. Tu appliques ainsi le principe de *Separation of Concern* ce qui facilite la lecture, la compréhension et la maintenance du code.
 
-Tu vas définir dans ce fichier la fonction asynchrone `register` que tu viens d'utiliser. Cette fonction doit stocker l'email et le mot de passe de l'utilisateur dans la base de donnée. Cependant, pour des raisons de sécurité, le mot de passe ne doit pas être stocké en clair mais doit être chiffré. Cela permet, si la base de donnée a été volée, de ne pas compromettre les comptes des utilisateurs sur d'autres services.
+- Définis la fonction asynchrone register que tu viens d'utiliser
+
+```javascript
+// authentication.js
+const register = async () => { 
+  // ...
+}
+
+module.exports = {
+  register
+}
+```
+
+Cette fonction doit stocker l'email et le mot de passe de l'utilisateur dans la base de donnée. Cependant, pour des raisons de sécurité, le mot de passe ne doit pas être stocké en clair mais doit être chiffré. Cela permet, si la base de donnée a été volée, de ne pas compromettre les comptes des utilisateurs sur d'autres services.
 
 - Installe les dépendences **argon2** et **randombytes**
 
@@ -91,10 +103,10 @@ const hashedPassword = await argon2.hash(password, { salt });
 - Stocke en base de donnée les données de l'utilisateur
 
 ```javascript
-  const user = await User.create({
-    email,
-    password: hashedPassword,
-  });
+const user = await User.create({
+  email,
+  password: hashedPassword,
+});
 ```
 
 Félicitations ! Tu peux maintenant créer de nouveaux utilisateurs. 
