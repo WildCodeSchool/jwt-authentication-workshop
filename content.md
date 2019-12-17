@@ -143,9 +143,11 @@ const { token } = await auth.authenticate({ email, password });
 
 ```javascript
   try {
+    // Il faut mettre dans le try le code qui peut jeter une erreur
     // ...
   } catch (err) {
-    res.status(401).send();
+    // Auquel cas le code du catch est exécuté
+    res.status(401).send(err);
   }
 ```
 
